@@ -3,306 +3,429 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Erny&#39;s Barber Shop | Los Angeles, CA</title>
-<meta name="description" content="Erny&#39;s Barber Shop in Los Angeles, CA. 4.1 stars, 57 reviews. Erny&amp;#39;s Barber Shop is a top-rated local business in Los Angeles, CA, known for exceptional quality and service that keeps customers ">
-<meta property="og:title" content="Erny&#39;s Barber Shop | Los Angeles, CA">
-<meta property="og:description" content="Rated 4.1 stars with 57 Google reviews. 4580 Whittier Blvd, East Los Angeles, CA 90022, USA">
+<title>Erny's Barber Shop | East Los Angeles,  CA 90022</title>
+<meta name="description" content="Erny's Barber Shop in East Los Angeles,  CA 90022. 4.1 stars, 57 reviews. Sharp Cuts. Clean Lines.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
-:root{--p:#A8C8D8;--p2:#305870;--acc:#C8E8F8;--bg:#020809;--bg2:#04101A;--bg3:#081820;--grad:linear-gradient(135deg,#A8C8D8 0%,#305870 50%,#A8C8D8 100%)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --primary:#1a1a2e;
+  --accent:#e94560;
+  --accent2:#f7a8b8;
+  --text:#f8f0f2;
+  --card:#252540;
+  --radius:12px;
+}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:#f0ece4;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;transition:all .3s}
-nav.sc{background:rgba(5,5,5,.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.06);padding:12px 40px}
-.n-logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:3px;color:var(--p);text-decoration:none}
-.n-links{display:flex;gap:28px;list-style:none}
-.n-links a{color:#bbb;text-decoration:none;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;transition:color .2s}
-.n-links a:hover{color:var(--p)}
-.n-cta{background:var(--grad);color:#000;font-weight:700;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;padding:10px 22px;border-radius:2px;text-decoration:none}
-.hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background-size:cover;background-position:center;background-attachment:fixed;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3nZs5p6vcUkRyDaBXSrBTWP7M3MYdra1nf4CxGLvzMS6AdORBo2j7MYsH_Zuayt6Kl3OnrscDPwjkozel724jc8Uw2xXkYuteqUY4jhpABu4VxfcGiljjFHiRAglm24wOgdvfU2tZW-22higwtSsnZcsTOtm9Ee-ZYfTIEdQE4Ejz0yGwhkMOAXzt_7HqWSWqa5F54XKT07G6M-yQAH7IwaEY0AHudTzx6flBaxND6P-U5LfiUthzsQNV7L1rNhTp6VkIYrkLXXXY9ZbZ9pZ9fgHkyqGn9jlAAtUj5OQdkDG5-pi0GwlumndIbvcose8pqC2iVLDELvOxg8BRtAH_j320Q_vnnj1MELmHwq0DDhbVkSZ9Dxt0jvyin_1LV5emCfKy0nVpcFXrqAyyFrsyd7SjRXIlf1rN5ANnOAAGU&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')}
-.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.72) 55%,rgba(0,0,0,.94) 100%);z-index:1}
-.h-grain{position:absolute;inset:0;z-index:2;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-.h-con{position:relative;z-index:3;max-width:900px;padding:0 24px}
-.h-pill{display:inline-block;border:1px solid var(--p);color:var(--p);font-size:.68rem;letter-spacing:3px;text-transform:uppercase;padding:6px 18px;border-radius:20px;margin-bottom:26px}
-.h-con h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,7vw,6rem);font-weight:900;line-height:1.02;margin-bottom:14px;background:linear-gradient(135deg,#fff 0%,#C8E8F8 50%,#A8C8D8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.h-sub{font-size:clamp(.9rem,2vw,1.25rem);color:rgba(255,255,255,.7);font-weight:300;letter-spacing:2px;margin-bottom:8px}
-.h-tag{font-size:.78rem;color:var(--p);letter-spacing:3px;text-transform:uppercase;margin-bottom:34px}
-.h-stats{display:flex;gap:40px;justify-content:center;margin-bottom:40px}
-.stn{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--p);line-height:1}
-.stl{font-size:.68rem;color:rgba(255,255,255,.4);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
-.h-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 32px;font-size:.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all .25s}
-.btn-p{background:var(--grad);color:#000}.btn-p:hover{opacity:.88;transform:translateY(-2px)}
-.btn-o{border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.8)}.btn-o:hover{border-color:var(--p);color:var(--p);transform:translateY(-2px)}
-.s-ind{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(255,255,255,.3);font-size:.62rem;letter-spacing:2px;text-transform:uppercase}
-.s-line{width:1px;height:46px;background:linear-gradient(to bottom,var(--p),transparent);animation:pl 2s ease-in-out infinite}
-@keyframes pl{0%,100%{opacity:.4}50%{opacity:1}}
-.mq{background:var(--grad);padding:12px 0;overflow:hidden;white-space:nowrap}
-.mqi{display:inline-block;animation:ms 30s linear infinite}
-.mqi span{font-family:'Bebas Neue',sans-serif;font-size:.9rem;letter-spacing:4px;color:#000;padding:0 32px}
-@keyframes ms{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-section{padding:90px 40px}
-.sl{font-size:.66rem;letter-spacing:4px;text-transform:uppercase;color:var(--p);margin-bottom:10px}
-.st{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;margin-bottom:16px;line-height:1.1}
-.sln{width:54px;height:2px;background:var(--grad);margin-bottom:40px}
-.wr{max-width:1160px;margin:0 auto}
-.ag{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center}
-.ai{position:relative;border-radius:4px;overflow:hidden;aspect-ratio:3/4}
-.ai img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.ai:hover img{transform:scale(1.04)}
-.ai::after{content:'';position:absolute;inset:0;border:1px solid rgba(255,255,255,.08)}
-.abs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
-.ab{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:3px;padding:13px;display:flex;align-items:center;gap:10px;font-size:.8rem;color:rgba(255,255,255,.6)}
-.ap{color:rgba(255,255,255,.58);line-height:1.85;font-size:.93rem;margin-bottom:16px}
-.sbg{background:var(--bg2)}
-.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.sc-card{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.07);border-radius:3px;padding:30px 24px;transition:all .3s}
-.sc-card:hover{background:rgba(255,255,255,.05);border-color:var(--p);transform:translateY(-4px)}
-.sc-icon{font-size:1.8rem;margin-bottom:12px}
-.sc-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--p);margin-bottom:10px}
-.sc-card p{font-size:.84rem;color:rgba(255,255,255,.5);line-height:1.7}
-.gg{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:4px;border-radius:3px;overflow:hidden}
-.gal-item{background-size:cover;background-position:center;cursor:pointer;transition:filter .3s,transform .3s;filter:brightness(.85)}
-.gal-item:hover{filter:brightness(1.1);transform:scale(1.01)}
-.gal-item:first-child{grid-row:1/3}
-.hcg{display:grid;grid-template-columns:1fr 1fr;gap:52px}
-.hcb{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.07);border-radius:3px;padding:34px}
-.hct{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--p);margin-bottom:20px}
-.hr-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.86rem}
-.hr-day{color:rgba(255,255,255,.42)}.hr-time{color:var(--p);font-weight:600}
-.ci{display:flex;align-items:flex-start;gap:13px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.05);text-decoration:none;color:inherit;transition:all .2s}
-.ci:hover .cv{color:var(--p)}
-.cico{font-size:1.1rem;margin-top:2px}
-.cl{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:3px}
-.cv{font-size:.9rem;color:rgba(255,255,255,.72);font-weight:500;line-height:1.4}
-.mbg{background:var(--bg3)}
-.mf{border-radius:3px;overflow:hidden;border:1px solid rgba(255,255,255,.08);margin-top:34px}
-.mf iframe{display:block;width:100%;height:420px}
-.rbg{background:var(--bg2)}
-.rg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.rev-card{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.07);border-radius:3px;padding:26px;transition:border-color .3s}
-.rev-card:hover{border-color:var(--p)}
-.rev-stars{color:var(--p);font-size:.92rem;letter-spacing:2px;margin-bottom:12px}
-.rev-card p{font-size:.86rem;color:rgba(255,255,255,.52);line-height:1.7;font-style:italic;margin-bottom:16px}
-.rev-auth{font-size:.72rem;color:var(--p);letter-spacing:2px;text-transform:uppercase;font-weight:600}
-.rm{display:inline-block;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:3px;padding:8px 16px;font-size:.8rem;color:rgba(255,255,255,.6);margin-bottom:12px}
-.rl{display:inline-flex;align-items:center;gap:7px;color:var(--p);text-decoration:none;font-size:.8rem;letter-spacing:1px;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:3px;transition:all .2s}
-.rl:hover{border-color:var(--p)}
-.ctas{background:var(--grad);padding:72px 40px;text-align:center}
-.ctas h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:#000;margin-bottom:12px}
-.ctas p{font-size:1rem;color:rgba(0,0,0,.6);margin-bottom:30px}
-.btn-dk{background:#000;color:var(--p);font-weight:700;letter-spacing:1.5px}
-.btn-dk:hover{background:#111;transform:translateY(-2px)}
-footer{background:#030303;padding:52px 40px 26px;border-top:1px solid rgba(255,255,255,.06)}
-.fg{display:grid;grid-template-columns:2fr 1fr 1fr;gap:52px;margin-bottom:40px}
-.fb{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:4px;color:var(--p);margin-bottom:12px}
-.fs{font-size:.8rem;color:rgba(255,255,255,.28);line-height:1.7;max-width:250px}
-.fc h4{font-size:.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--p);margin-bottom:16px}
-.fc ul{list-style:none}.fc li{margin-bottom:8px}
-.fc a{color:rgba(255,255,255,.32);text-decoration:none;font-size:.84rem;transition:color .2s}
-.fc a:hover{color:var(--p)}
-.fbot{border-top:1px solid rgba(255,255,255,.05);padding-top:20px;display:flex;justify-content:space-between}
-.fcp{font-size:.73rem;color:rgba(255,255,255,.18)}
-#lb{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.96);align-items:center;justify-content:center}
-#lb.open{display:flex}
-#lb img{max-width:90vw;max-height:90vh;object-fit:contain}
-#lbx{position:fixed;top:18px;right:22px;font-size:2rem;color:var(--p);cursor:pointer;background:none;border:none;z-index:10000}
-.stk{position:fixed;bottom:0;left:0;right:0;z-index:998;background:rgba(5,5,5,.96);backdrop-filter:blur(16px);border-top:1px solid rgba(255,255,255,.06);padding:11px 40px;display:flex;align-items:center;justify-content:space-between;transform:translateY(100%);transition:transform .3s}
-.stk.on{transform:translateY(0)}
-.stn2{font-family:'Bebas Neue',sans-serif;font-size:.95rem;letter-spacing:2px;color:var(--p)}
-.stbs{display:flex;gap:10px}
-.stb{padding:8px 18px;font-size:.73rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;text-decoration:none;transition:all .2s}
-.stbg{background:var(--grad);color:#000}
-.stbo{border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.7)}
-.fade{opacity:0;transform:translateY(34px);transition:opacity .6s ease,transform .6s ease}
-.fade.in{opacity:1;transform:translateY(0)}
+body{background:var(--primary);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden}
+
+/* NOISE TEXTURE */
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.4}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 40px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(20px);background:rgba(0,0,0,0.3);border-bottom:1px solid rgba(255,255,255,0.06);transition:all .3s}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--accent);letter-spacing:2px;text-transform:uppercase}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:var(--text);text-decoration:none;font-size:.8rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;opacity:.7;transition:opacity .2s}
+.nav-links a:hover{opacity:1;color:var(--accent)}
+.nav-cta{background:var(--accent);color:var(--primary);padding:10px 24px;border-radius:50px;font-size:.75rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:all .3s}
+.nav-cta:hover{background:var(--accent2);transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.4)}
+
+/* HERO */
+.hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3mSgkO3Cd-vqt6bqvIGBS0KxRxyciouojY-AGVxnBKGOhz-T9NE3LrluWjVxcAiIqBpkQhm92IxMC7R1ORLSKe3Iz5jJpYat1fEpCksk6cnFkKHwRdcCl7eTN43srZ0-vrE2G-RNtd6j3mgDfJoAWIEwz8MoS-_eheQUQpfZtfEhwcbnHyGyiSZN6sZZ1Wd5dZOnfqul4yaghl6A9MICre8pjG_Fm0mJUjBOU0OM2SrGW5awrGCL10vdljv9idwODoepfqwDFcLKs8PNQ9Ay-rB5P9jjsy_OYYRKaDux3NHCJAHhvValeIPXofynXCpGQRH25nTClIxZRuDWEAQC8wXSEvnHo_QRWykvkdbgT-GDq8icKmgCoxLRUqfkXrquHJivzLmq9akyfNKwbx7_h1_xulV-tFDEFTH9Qz9QJA&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY');background-size:cover;background-position:center;transform:scale(1.05);transition:transform 8s ease;filter:saturate(0.9)}
+.hero-bg:hover{transform:scale(1.0)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.65) 100%)}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:900px}
+.hero-eyebrow{font-size:.7rem;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--accent);opacity:.9;margin-bottom:20px;animation:fadeUp .8s ease forwards}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3.5rem,9vw,8rem);font-weight:300;line-height:1;letter-spacing:-1px;margin-bottom:24px;animation:fadeUp .9s ease .1s both}
+.hero-title span{color:var(--accent);font-style:italic}
+.hero-tagline{font-size:1rem;font-weight:300;opacity:.75;letter-spacing:2px;text-transform:uppercase;margin-bottom:48px;animation:fadeUp 1s ease .2s both}
+.hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fadeUp 1s ease .3s both}
+.btn-primary{background:var(--accent);color:var(--primary);padding:16px 40px;border-radius:50px;font-size:.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all .3s;border:none;cursor:pointer}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.5)}
+.btn-outline{border:1px solid rgba(255,255,255,.3);color:var(--text);padding:16px 40px;border-radius:50px;font-size:.8rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all .3s;backdrop-filter:blur(10px)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:.5;animation:bounce 2s infinite}
+.hero-scroll span{font-size:.65rem;letter-spacing:3px;text-transform:uppercase}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--text),transparent)}
+
+/* STATS STRIP */
+.stats-strip{background:var(--card);border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:32px 40px;display:flex;justify-content:center;gap:80px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-number{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--accent);line-height:1}
+.stat-label{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;opacity:.6;margin-top:4px}
+
+/* MARQUEE */
+.marquee-wrap{overflow:hidden;background:var(--accent);padding:12px 0}
+.marquee-track{display:flex;gap:60px;white-space:nowrap;animation:marquee 20s linear infinite}
+.marquee-item{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:3px;color:var(--primary);text-transform:uppercase}
+.marquee-dot{color:var(--primary);opacity:.5}
+
+/* ABOUT / EDITORIAL SECTION */
+.section{padding:100px 40px;max-width:1200px;margin:0 auto}
+.section-label{font-size:.65rem;letter-spacing:4px;text-transform:uppercase;color:var(--accent);opacity:.8;margin-bottom:16px}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:400;line-height:1.2;margin-bottom:24px}
+.section-body{font-size:.95rem;line-height:1.8;opacity:.7;max-width:560px}
+
+.editorial-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 40px;max-width:1200px;margin:0 auto}
+.editorial-text .section-body{max-width:100%}
+.editorial-images{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.editorial-img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--radius);transition:transform .4s ease}
+.editorial-img:hover{transform:scale(1.02)}
+.editorial-img.tall{grid-row:1/3;aspect-ratio:2/3}
+
+/* BENTO GRID */
+.bento-section{padding:80px 40px;max-width:1200px;margin:0 auto}
+.bento-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:300px 300px;gap:12px}
+.bento-card{border-radius:var(--radius);overflow:hidden;position:relative;cursor:pointer}
+.bento-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.bento-card:hover img{transform:scale(1.05)}
+.bento-card.large{grid-row:1/3}
+.bento-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6) 0%,transparent 60%);display:flex;align-items:flex-end;padding:20px}
+.bento-label{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.8)}
+
+/* SERVICES */
+.services-section{padding:80px 40px;background:var(--card)}
+.services-inner{max-width:1200px;margin:0 auto}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:48px}
+.service-card{background:var(--primary);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:32px;transition:all .3s;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity .3s}
+.service-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.15)}
+.service-card:hover::before{opacity:1}
+.service-icon{font-size:2rem;margin-bottom:16px}
+.service-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;margin-bottom:8px;color:var(--accent)}
+.service-desc{font-size:.85rem;opacity:.6;line-height:1.6}
+
+/* REVIEWS */
+.reviews-section{padding:80px 40px;max-width:1200px;margin:0 auto}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:48px}
+.review-card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:32px;position:relative}
+.review-card::before{content:'"';position:absolute;top:16px;right:24px;font-family:'Cormorant Garamond',serif;font-size:5rem;color:var(--accent);opacity:.15;line-height:1}
+.review-stars{color:var(--accent);font-size:1rem;letter-spacing:2px;margin-bottom:16px}
+.review-text{font-size:.9rem;line-height:1.7;opacity:.75;margin-bottom:20px;font-style:italic}
+.review-author{font-size:.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);opacity:.8}
+
+/* HOURS + MAP */
+.info-section{display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:100%}
+.info-hours{background:var(--card);padding:80px 60px}
+.info-map{position:relative;min-height:500px}
+.info-map iframe{width:100%;height:100%;border:none;filter:saturate(0.7) contrast(1.1)}
+.hour-row{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:.85rem;opacity:.75}
+.hours-title{font-family:'Cormorant Garamond',serif;font-size:2rem;margin-bottom:32px;color:var(--accent)}
+
+/* CONTACT BAR */
+.contact-bar{background:var(--primary);border-top:1px solid rgba(255,255,255,.06);padding:60px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:32px;max-width:100%;margin:0}
+.contact-info h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:8px}
+.contact-info p{font-size:.85rem;opacity:.6}
+.contact-actions{display:flex;gap:16px;flex-wrap:wrap}
+
+/* FOOTER */
+footer{background:#000;border-top:1px solid rgba(255,255,255,.06);padding:40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--accent);letter-spacing:2px}
+.footer-copy{font-size:.75rem;opacity:.4}
+.footer-links{display:flex;gap:24px}
+.footer-links a{color:var(--text);text-decoration:none;font-size:.75rem;opacity:.4;transition:opacity .2s}
+.footer-links a:hover{opacity:.8}
+
+/* FLOATING CTA */
+.float-cta{position:fixed;bottom:32px;right:32px;z-index:200;background:var(--accent);color:var(--primary);padding:16px 28px;border-radius:50px;font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;box-shadow:0 8px 32px rgba(0,0,0,.4);animation:pulse 3s infinite;transition:transform .2s}
+.float-cta:hover{transform:scale(1.05)}
+
+/* PARALLAX SECTION */
+.parallax-banner{position:relative;height:400px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.parallax-bg{position:absolute;inset:-60px;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3m7zosI2187JQ88eXBPoIOn4FkePhSVS9LryyizSdGhDaJftHJuGDHfMrjcxgWpUTUXu7BTl08UsYYxFqeWTV4xuCji2RVo0mYI-aY0uFJFAZVMpzOkYFnCtrzdIY-EKCIiv1Pa-h4xCtEzCbT4m8jdAJedMRil7gEsT6MBEHm9GaPyVSpKjlQw-TG_5GFJ32Gr9oETDBuR1soAtJnNhSKaxJUm4uSCiNx6UJS7Z5ZG3grwilgwgJRhaowSIGVqOfxC4q1WWKdfl9wT3iwAbZpA9QwYHhcFIFKpNdjmBQ0s1by3xdrK_7Uvp_o2D9Dj5w0iyx9_3aRpkEeIPVRfKEP9mpa226PMzrh-de_UyvX8vZmuLzw-SX2GkdAA4zc4GPjm5q2P8QIwhP3GMlzHy22kRaAZj4Hhq_D8Kr_fr-o65KoSnFTRZ80vRX0Uvw&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY');background-size:cover;background-position:center;background-attachment:fixed;filter:brightness(0.4)}
+.parallax-content{position:relative;z-index:2;text-align:center}
+.parallax-content h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:300;letter-spacing:2px}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes pulse{0%,100%{box-shadow:0 8px 32px rgba(0,0,0,.4)}50%{box-shadow:0 8px 48px rgba(201,169,110,.3)}}
+@keyframes countUp{from{opacity:0}to{opacity:1}}
+
+.reveal{opacity:0;transform:translateY(40px);transition:all .8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* MOBILE */
 @media(max-width:768px){
-  nav{padding:14px 16px}.n-links{display:none}
-  section{padding:60px 16px}
-  .ag,.hcg,.fg{grid-template-columns:1fr}
-  .sg,.rg{grid-template-columns:1fr}
-  .gg{grid-template-columns:1fr 1fr;grid-template-rows:auto}
-  .gal-item:first-child{grid-row:auto}
-  .h-stats{gap:22px}.stk{padding:10px 16px}
+  nav{padding:16px 20px}
+  .nav-links{display:none}
+  .stats-strip{gap:32px}
+  .editorial-grid{grid-template-columns:1fr}
+  .bento-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .bento-card.large{grid-row:auto}
+  .info-section{grid-template-columns:1fr}
+  .info-map{min-height:300px}
+  .contact-bar{flex-direction:column}
+  footer{flex-direction:column;text-align:center}
+  .float-cta{bottom:20px;right:20px;padding:14px 22px}
 }
 </style>
 </head>
 <body>
-<nav id="nav">
-  <a href="#" class="n-logo">Erny&#39;s Barber Shop</a>
-  <ul class="n-links">
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">Erny's Barber Shop</div>
+  <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="tel:3234957176" class="n-cta">Book a Cut</a>
+  <a href="tel:(323) 495-7176" class="nav-cta">Call Now</a>
 </nav>
 
-<section class="hero" id="home">
-  <div class="h-grain"></div>
-  <div class="h-con">
-    <div class="h-pill">Los Angeles, CA &nbsp;&#183;&nbsp; 4.1 Stars &nbsp;&#183;&nbsp; 57 Reviews</div>
-    <h1>Erny&#39;s Barber Shop</h1>
-    <p class="h-sub">Sharp. Clean. Precise.</p>
-    <p class="h-tag">Erny&#39;s Classic Barber Shop</p>
-    <div class="h-stats">
-      <div><div class="stn">4.1</div><div class="stl">Star Rating</div></div>
-      <div><div class="stn">57</div><div class="stl">Reviews</div></div>
-      <div><div class="stn">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="stl">Google</div></div>
-    </div>
-    <div class="h-btns">
-      <a href="tel:3234957176" class="btn btn-p">Book a Cut</a>
-      <a href="#services" class="btn btn-o">Our Services</a>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Barbershop &nbsp;&bull;&nbsp; East Los Angeles,  CA 90022</div>
+    <h1 class="hero-title"><span>Erny's Barber Shop</span></h1>
+    <p class="hero-tagline">Sharp Cuts. Clean Lines.</p>
+    <div class="hero-actions">
+      <a href="tel:(323) 495-7176" class="btn-primary">Call (323) 495-7176</a>
+      <a href="https://www.google.com/maps/place/?q=place_id:ChIJsThKqA3PwoARyXpHVjZpkXs" target="_blank" class="btn-outline">Get Directions</a>
     </div>
   </div>
-  <div class="s-ind"><div class="s-line"></div>Scroll</div>
-</section>
-
-<div class="mq"><div class="mqi">
-  <span>Erny&#39;s Barber Shop</span><span>&#9679;</span><span>Los Angeles CA</span><span>&#9679;</span>
-  <span>4.1 Stars</span><span>&#9679;</span><span>57 Reviews</span><span>&#9679;</span>
-  <span>(323) 495-7176</span><span>&#9679;</span><span>4580 Whittier Blvd, East Los Angeles, CA 90022, USA</span><span>&#9679;</span>
-  <span>Erny&#39;s Barber Shop</span><span>&#9679;</span><span>Los Angeles CA</span><span>&#9679;</span>
-  <span>4.1 Stars</span><span>&#9679;</span><span>57 Reviews</span><span>&#9679;</span>
-  <span>(323) 495-7176</span><span>&#9679;</span><span>4580 Whittier Blvd, East Los Angeles, CA 90022, USA</span><span>&#9679;</span>
-</div></div>
-
-<section id="about"><div class="wr">
-  <div class="ag fade">
-    <div class="ai"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3mi6ZNhiKWhRSWxQfaczUAeHmFfvDkseLfhgc-ad784atdtozflZ_25xETX9UDC9DMgrnv6hu7o37xL7uEAMnYLQ4iOHGzexZSwMbymD3B58iQJTp6Ag433CnFHlSHjPXjr97qEXOm_Dfe1cyb5GRC2rNwHqPbjL5t_Iu5gBzo4X87sIDV3b1hzTuDqUQQRQZ26h48CfmPlkXQf446-i_GVYHZ7W-I9Skk0yccWDrcnsL4IMI2dcR1kZRBhyITU27gEOkZMF7rG9gq1reTZoBFG8GXYPORPImQBXuy8sPXxt5AajIXamceqBOroLWohef-DXFlUxSolSGhHCaXFoYlRmZ49RiYQf1_Mds7dnd5muXffdDnL7-ixjRXiF9XPDut1JjN1hNYq8ELWqhGf_iL9CJ34TqgWNQ4f-r2cSJ4mVBYQ&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY" alt="Erny&#39;s Barber Shop" loading="lazy" onerror="this.parentElement.style.background='var(--bg2)'"></div>
-    <div>
-      <div class="sl">Our Story</div>
-      <h2 class="st">A Trusted Name<br>in Los Angeles</h2>
-      <div class="sln"></div>
-      <p class="ap">Erny&amp;#39;s Barber Shop is a top-rated local business in Los Angeles, CA, known for exceptional quality and service that keeps customers coming back.</p>
-      <p class="ap">With 57 verified Google reviews and a 4.1-star rating, we&apos;ve built our reputation one satisfied customer at a time. Come experience the difference.</p>
-      <div class="abs">
-        <div class="ab"><span>&#9733;</span>4.1-Star Rated</div>
-        <div class="ab"><span>&#10003;</span>57 Reviews</div>
-        <div class="ab"><span>&#128205;</span>Los Angeles, CA</div>
-        <div class="ab"><span>&#128222;</span>(323) 495-7176</div>
-      </div>
-    </div>
-  </div>
-</div></section>
-
-<section id="services" class="sbg"><div class="wr">
-  <div class="fade" style="text-align:center;margin-bottom:48px">
-    <div class="sl">What We Offer</div>
-    <h2 class="st">Our Services</h2>
-    <div class="sln" style="margin:0 auto"></div>
-  </div>
-  <div class="sg fade"><div class="svc-card"><div class="svc-icon">&#9988;</div><h3>Haircuts</h3><p>Precision fades, tapers, and classic cuts for every style.</p></div><div class="svc-card"><div class="svc-icon">&#128082;</div><h3>Beard Trims</h3><p>Shape-ups, line-ups, and full beard styling by expert barbers.</p></div><div class="svc-card"><div class="svc-icon">&#10024;</div><h3>Hot Towel Shave</h3><p>Traditional straight razor shave with hot towel and premium oils.</p></div><div class="svc-card"><div class="svc-icon">&#128137;</div><h3>Hair Designs</h3><p>Custom hair art, parts, and designs cut to perfection.</p></div><div class="svc-card"><div class="svc-icon">&#127829;</div><h3>Kids Cuts</h3><p>Patient, professional haircuts for children of all ages.</p></div><div class="svc-card"><div class="svc-icon">&#128167;</div><h3>Hair Treatments</h3><p>Scalp massages, conditioning, and moisture treatments.</p></div></div>
-</div></section>
-
-<section id="gallery"><div class="wr">
-  <div class="fade" style="margin-bottom:34px">
-    <div class="sl">Real Photos</div>
-    <h2 class="st">Photo Gallery</h2>
-    <div class="sln"></div>
-  </div>
-  <div class="gg fade"><div class="gal-item" onclick="openLB('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3nZs5p6vcUkRyDaBXSrBTWP7M3MYdra1nf4CxGLvzMS6AdORBo2j7MYsH_Zuayt6Kl3OnrscDPwjkozel724jc8Uw2xXkYuteqUY4jhpABu4VxfcGiljjFHiRAglm24wOgdvfU2tZW-22higwtSsnZcsTOtm9Ee-ZYfTIEdQE4Ejz0yGwhkMOAXzt_7HqWSWqa5F54XKT07G6M-yQAH7IwaEY0AHudTzx6flBaxND6P-U5LfiUthzsQNV7L1rNhTp6VkIYrkLXXXY9ZbZ9pZ9fgHkyqGn9jlAAtUj5OQdkDG5-pi0GwlumndIbvcose8pqC2iVLDELvOxg8BRtAH_j320Q_vnnj1MELmHwq0DDhbVkSZ9Dxt0jvyin_1LV5emCfKy0nVpcFXrqAyyFrsyd7SjRXIlf1rN5ANnOAAGU&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3nZs5p6vcUkRyDaBXSrBTWP7M3MYdra1nf4CxGLvzMS6AdORBo2j7MYsH_Zuayt6Kl3OnrscDPwjkozel724jc8Uw2xXkYuteqUY4jhpABu4VxfcGiljjFHiRAglm24wOgdvfU2tZW-22higwtSsnZcsTOtm9Ee-ZYfTIEdQE4Ejz0yGwhkMOAXzt_7HqWSWqa5F54XKT07G6M-yQAH7IwaEY0AHudTzx6flBaxND6P-U5LfiUthzsQNV7L1rNhTp6VkIYrkLXXXY9ZbZ9pZ9fgHkyqGn9jlAAtUj5OQdkDG5-pi0GwlumndIbvcose8pqC2iVLDELvOxg8BRtAH_j320Q_vnnj1MELmHwq0DDhbVkSZ9Dxt0jvyin_1LV5emCfKy0nVpcFXrqAyyFrsyd7SjRXIlf1rN5ANnOAAGU&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')"></div><div class="gal-item" onclick="openLB('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3mi6ZNhiKWhRSWxQfaczUAeHmFfvDkseLfhgc-ad784atdtozflZ_25xETX9UDC9DMgrnv6hu7o37xL7uEAMnYLQ4iOHGzexZSwMbymD3B58iQJTp6Ag433CnFHlSHjPXjr97qEXOm_Dfe1cyb5GRC2rNwHqPbjL5t_Iu5gBzo4X87sIDV3b1hzTuDqUQQRQZ26h48CfmPlkXQf446-i_GVYHZ7W-I9Skk0yccWDrcnsL4IMI2dcR1kZRBhyITU27gEOkZMF7rG9gq1reTZoBFG8GXYPORPImQBXuy8sPXxt5AajIXamceqBOroLWohef-DXFlUxSolSGhHCaXFoYlRmZ49RiYQf1_Mds7dnd5muXffdDnL7-ixjRXiF9XPDut1JjN1hNYq8ELWqhGf_iL9CJ34TqgWNQ4f-r2cSJ4mVBYQ&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3mi6ZNhiKWhRSWxQfaczUAeHmFfvDkseLfhgc-ad784atdtozflZ_25xETX9UDC9DMgrnv6hu7o37xL7uEAMnYLQ4iOHGzexZSwMbymD3B58iQJTp6Ag433CnFHlSHjPXjr97qEXOm_Dfe1cyb5GRC2rNwHqPbjL5t_Iu5gBzo4X87sIDV3b1hzTuDqUQQRQZ26h48CfmPlkXQf446-i_GVYHZ7W-I9Skk0yccWDrcnsL4IMI2dcR1kZRBhyITU27gEOkZMF7rG9gq1reTZoBFG8GXYPORPImQBXuy8sPXxt5AajIXamceqBOroLWohef-DXFlUxSolSGhHCaXFoYlRmZ49RiYQf1_Mds7dnd5muXffdDnL7-ixjRXiF9XPDut1JjN1hNYq8ELWqhGf_iL9CJ34TqgWNQ4f-r2cSJ4mVBYQ&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')"></div><div class="gal-item" onclick="openLB('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3mqGV5Tt3-Y3zpCN6frujAL85o9Sc5-roogQuoO3sblttnoiR16LoCvZlSLYEI0JAPMyT9EXtL-6stF-9-SpvxUfg4qybZsQETYY4HrcdGu1ax0h30fxUiZYWmcLADDPXqGVcM7G_X31MFo_jOwof7i59OKYSMg0DM1MzRQji3nojM4awI3whcySaXBexGtAoEhwwwilwXXE_uuwu0NMRUipFJliMAAVrxLQMJYyZbn9gafviLjjPXNtWS4nuGmXGSKciuafvGag73XJWiws1RVf67eQpwBF-ugltZxnRl09roRayxCvCXOTQcZa-_AJLbkPrttIflGGzfS1Cwp8pSEufJ9YVC5mxouKKCkA8XqLRGlcQMpq9dUzThakGszGEct_lf1Po5TBHqBu9TdnqOnUBwNPAI4Rmf2-jPxJkd6loB8RAAeBE-m0awMrA&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3mqGV5Tt3-Y3zpCN6frujAL85o9Sc5-roogQuoO3sblttnoiR16LoCvZlSLYEI0JAPMyT9EXtL-6stF-9-SpvxUfg4qybZsQETYY4HrcdGu1ax0h30fxUiZYWmcLADDPXqGVcM7G_X31MFo_jOwof7i59OKYSMg0DM1MzRQji3nojM4awI3whcySaXBexGtAoEhwwwilwXXE_uuwu0NMRUipFJliMAAVrxLQMJYyZbn9gafviLjjPXNtWS4nuGmXGSKciuafvGag73XJWiws1RVf67eQpwBF-ugltZxnRl09roRayxCvCXOTQcZa-_AJLbkPrttIflGGzfS1Cwp8pSEufJ9YVC5mxouKKCkA8XqLRGlcQMpq9dUzThakGszGEct_lf1Po5TBHqBu9TdnqOnUBwNPAI4Rmf2-jPxJkd6loB8RAAeBE-m0awMrA&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')"></div><div class="gal-item" onclick="openLB('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3mMsT8pQVGGJBsCa0tnZ5Ogz4knAScEAjeaXOzftKNlADN7KltrRoy0ixLIlNDuhP2HRTexC2g-50dGF19qTRHxt-4wPHj_7uLHwOO5umhiZ9dflrnREITV2pQBq-DRQZBlnTYRA6pdwGKVhItuhn25mjDO-yuDsCO-BFBjEUUGC9th4PwEdB4KOSD-d64ms3L6nU0nLn1_Ql4BcV-s9-ocwsciCvoZ-fvJNI3ZMwWqepCbcrcsDRU8F0w8XCakz-MaU7Z1M8jCmwKFsCbMlGdryrVt83t66W5ST0JNzXQKAchqEb89WXG_U6Pq9OvcXDAuWs0DYaJmcLlFuB2QMsB5gAvzIiUKM5VgNO0eN6qzQSNaUbT6vDe0jloJasNX4RYGny2_DPPw70H4wXGpmH-nfTlKd-8bT4mPdvS_boq2mg&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3mMsT8pQVGGJBsCa0tnZ5Ogz4knAScEAjeaXOzftKNlADN7KltrRoy0ixLIlNDuhP2HRTexC2g-50dGF19qTRHxt-4wPHj_7uLHwOO5umhiZ9dflrnREITV2pQBq-DRQZBlnTYRA6pdwGKVhItuhn25mjDO-yuDsCO-BFBjEUUGC9th4PwEdB4KOSD-d64ms3L6nU0nLn1_Ql4BcV-s9-ocwsciCvoZ-fvJNI3ZMwWqepCbcrcsDRU8F0w8XCakz-MaU7Z1M8jCmwKFsCbMlGdryrVt83t66W5ST0JNzXQKAchqEb89WXG_U6Pq9OvcXDAuWs0DYaJmcLlFuB2QMsB5gAvzIiUKM5VgNO0eN6qzQSNaUbT6vDe0jloJasNX4RYGny2_DPPw70H4wXGpmH-nfTlKd-8bT4mPdvS_boq2mg&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')"></div><div class="gal-item" onclick="openLB('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3mq-husE_X8JK0v05ERZEmiYDnyviSRlkWs-uH5vbA3N0iVp_nI4UO9ftJ2-gNOMmh_G3eNfOpgRKxNLRV98GjdA-VGib6ZOtzbsFNzBvd1DtfI0b4P7ndOv4THrcIvB76PM8PieH2GlNugHc-yWQYER3Z8gV_Y0a858TqWZ1BIjXa6VHRZe9278UcIXGsKgg69lzNd03T_WRxPttwlpagfJ0dd1UQ5cejvis1GAPVVgvG__MCpLdJlAz_mbwrlVEuybQEG_6bSnNxQvcgabKgXNmvLGFyB-uKbUGjdNya1joWXrGZ-FNl4IvcPG4BoL7hV7q7WcBP_CcDBcLMojl09wuoCq6kMUZzAuHgCrDhXwrK2qVNI4IXP9Bl6AFnk5EA6IEE-DdOsfLg9sgyILIiqnCk0HgQKUfSYgYtEvEHgHi5w&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3mq-husE_X8JK0v05ERZEmiYDnyviSRlkWs-uH5vbA3N0iVp_nI4UO9ftJ2-gNOMmh_G3eNfOpgRKxNLRV98GjdA-VGib6ZOtzbsFNzBvd1DtfI0b4P7ndOv4THrcIvB76PM8PieH2GlNugHc-yWQYER3Z8gV_Y0a858TqWZ1BIjXa6VHRZe9278UcIXGsKgg69lzNd03T_WRxPttwlpagfJ0dd1UQ5cejvis1GAPVVgvG__MCpLdJlAz_mbwrlVEuybQEG_6bSnNxQvcgabKgXNmvLGFyB-uKbUGjdNya1joWXrGZ-FNl4IvcPG4BoL7hV7q7WcBP_CcDBcLMojl09wuoCq6kMUZzAuHgCrDhXwrK2qVNI4IXP9Bl6AFnk5EA6IEE-DdOsfLg9sgyILIiqnCk0HgQKUfSYgYtEvEHgHi5w&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')"></div></div>
-</div></section>
-
-<section id="contact" class="mbg"><div class="wr">
-  <div class="fade" style="margin-bottom:40px">
-    <div class="sl">Find Us</div>
-    <h2 class="st">Hours &amp; Contact</h2>
-    <div class="sln"></div>
-  </div>
-  <div class="hcg fade">
-    <div class="hcb">
-      <div class="hct">Business Hours</div>
-      <div class="hr-row"><span class="hr-day">Hours</span><span class="hr-time">Call to confirm</span></div>
-    </div>
-    <div class="hcb">
-      <div class="hct">Get in Touch</div>
-      <a href="tel:3234957176" class="ci"><span class="cico">&#128222;</span><div><div class="cl">Phone</div><div class="cv">(323) 495-7176</div></div></a>
-      <a href="https://maps.google.com/?q=Erny's+Barber+Shop%2C4580+Whittier+Blvd%2C+East+Los+Angeles%2C+CA+90022%2C+USA" target="_blank" class="ci"><span class="cico">&#128205;</span><div><div class="cl">Address</div><div class="cv">4580 Whittier Blvd, East Los Angeles, CA 90022, USA</div></div></a>
-      <a href="https://maps.google.com/?q=Erny's+Barber+Shop%2C4580+Whittier+Blvd%2C+East+Los+Angeles%2C+CA+90022%2C+USA" target="_blank" class="ci"><span class="cico">&#128663;</span><div><div class="cl">Directions</div><div class="cv">Open in Google Maps &rarr;</div></div></a>
-    </div>
-  </div>
-  <div class="mf fade"><iframe src="https://maps.google.com/maps?q=Erny's+Barber+Shop%2C4580+Whittier+Blvd%2C+East+Los+Angeles%2C+CA+90022%2C+USA&output=embed&z=16" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Erny&#39;s Barber Shop Map"></iframe></div>
-  <div style="text-align:center;margin-top:26px">
-    <a href="https://maps.google.com/?q=Erny's+Barber+Shop%2C4580+Whittier+Blvd%2C+East+Los+Angeles%2C+CA+90022%2C+USA" target="_blank" class="btn btn-p">&#128205; Get Directions to Erny&#39;s Barber Shop</a>
-  </div>
-</div></section>
-
-<section id="reviews" class="rbg"><div class="wr">
-  <div class="fade" style="margin-bottom:14px">
-    <div class="sl">What People Say</div>
-    <h2 class="st">Google Reviews</h2>
-    <div class="sln"></div>
-    <div class="rm">Erny&#39;s Barber Shop &nbsp;&#183;&nbsp; 4.1 &#9733; on Google &nbsp;&#183;&nbsp; 57 Reviews</div><br>
-    <a href="https://search.google.com/local/reviews?placeid=ChIJsThKqA3PwoARyXpHVjZpkXs" target="_blank" class="rl">&#11088; Leave a Review</a>
-  </div>
-  <div class="rg fade"><div class="rev-card"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"This place never fails, Kevin always makes sure to take his time, he never let me down, he always does a amazing job, Ima always come to this barber shop 10/10..."</p><div class="rev-auth">— Aldo Campos</div></div>
-<div class="rev-card"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Great place to get your haircut. Good music A/C Good vibes and if you like sports there’s always a game on the tv/movies...."</p><div class="rev-auth">— Edgar Lopez</div></div>
-</div>
-</div></section>
-
-<section class="ctas">
-  <h2>Get Fresh Today</h2>
-  <p>Join 57 happy customers. Call Erny&#39;s Barber Shop in Los Angeles today.</p>
-  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-    <a href="tel:3234957176" class="btn btn-dk">&#128222; (323) 495-7176</a>
-    <a href="https://maps.google.com/?q=Erny's+Barber+Shop%2C4580+Whittier+Blvd%2C+East+Los+Angeles%2C+CA+90022%2C+USA" target="_blank" class="btn btn-dk" style="background:#111">&#128205; Directions</a>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
   </div>
 </section>
 
-<footer><div class="wr">
-  <div class="fg">
-    <div><div class="fb">Erny&#39;s Barber Shop</div><p class="fs">Erny&amp;#39;s Barber Shop is a top-rated local business in Los Angeles, CA, known for exceptional quality and service that keeps customers coming back.</p></div>
-    <div class="fc"><h4>Quick Links</h4><ul>
-      <li><a href="#about">About</a></li><li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul></div>
-    <div class="fc"><h4>Contact</h4><ul>
-      <li><a href="tel:3234957176">(323) 495-7176</a></li>
-      <li><a href="https://maps.google.com/?q=Erny's+Barber+Shop%2C4580+Whittier+Blvd%2C+East+Los+Angeles%2C+CA+90022%2C+USA" target="_blank">Get Directions</a></li>
-      <li><a href="https://search.google.com/local/reviews?placeid=ChIJsThKqA3PwoARyXpHVjZpkXs" target="_blank">Leave a Review</a></li>
-    </ul></div>
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stat">
+    <div class="stat-number" data-target="57">57</div>
+    <div class="stat-label">Google Reviews</div>
   </div>
-  <div class="fbot">
-    <div class="fcp">&copy; 2025 Erny&#39;s Barber Shop. All rights reserved. Los Angeles, CA.</div>
-    <div class="fcp">LA Web Design</div>
+  <div class="stat">
+    <div class="stat-number">4.1</div>
+    <div class="stat-label">Star Rating</div>
   </div>
-</div></footer>
-
-<div id="lb"><button id="lbx" onclick="closeLB()">&#x2715;</button><img id="lbi" src="" alt=""></div>
-<div class="stk" id="stk">
-  <div class="stn2">Erny&#39;s Barber Shop</div>
-  <div class="stbs">
-    <a href="tel:3234957176" class="stb stbg">&#128222; Call Now</a>
-    <a href="https://maps.google.com/?q=Erny's+Barber+Shop%2C4580+Whittier+Blvd%2C+East+Los+Angeles%2C+CA+90022%2C+USA" target="_blank" class="stb stbo">Directions</a>
+  <div class="stat">
+    <div class="stat-number">LA</div>
+    <div class="stat-label">Los Angeles</div>
+  </div>
+  <div class="stat">
+    <div class="stat-number">5★</div>
+    <div class="stat-label">Service</div>
   </div>
 </div>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Erny's Barber Shop</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Barbershop</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Los Angeles</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">4.1 Stars</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">57 Reviews</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Erny's Barber Shop</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Barbershop</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Los Angeles</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">4.1 Stars</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">57 Reviews</span><span class="marquee-dot">✦</span>
+  </div>
+</div>
+
+<!-- EDITORIAL SECTION -->
+<div class="editorial-grid" id="about">
+  <div class="editorial-text reveal">
+    <div class="section-label">Our Story</div>
+    <h2 class="section-title">Excellence in Every Detail</h2>
+    <p class="section-body">
+      Erny's Barber Shop has been a trusted destination in Los Angeles, delivering exceptional barbershop services with care and expertise.
+      With 57 Google reviews and a 4.1-star rating, our reputation speaks for itself.
+      Located at 4580 Whittier Blvd, we welcome walk-ins and appointments alike.
+    </p>
+    <br><br>
+    <a href="tel:(323) 495-7176" class="btn-primary" style="display:inline-block;margin-top:8px">Book Appointment</a>
+  </div>
+  <div class="editorial-images reveal">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3llm_dx1y4c_Ejn6gH8Qj6Z8bpj8PfOAw8qHRnWjf9Y8urn4Q0XCcbQc-TyqxYVmuyCY4-NAv2pvugyJVEPLobqnfFlgpckEilJduaheZAZ0CqMTgU4au2-pggzPSeadYeQje5kgA83zMN1OsjII1v1_vwx3HDFdJzZyylOMTdzSQwh6LD7psfFUadMdr7ImRE7e9BjsujWO5tazDp7D5IVSX2cNo0LGx_mv7X7sW-0xzJ2fEZSEfN0nDP-KJpSqVZ7A_emO-p28xhfep1tHamlzsH3OEXFvtk3u9uDNWTs58JbnHJfWM_IiIe6o-FeESLT1-f2eOrMu8uiG7Xj4zrq8ig0EGsNllGfLNDZ26IJKyJUFBiIe-muNDV9K3LCAkOgYcUS5Mm5Xy3HVgx9j36SH6iQfuGWahlA0Dg5KPSxUSro&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY" alt="Erny's Barber Shop" class="editorial-img tall" loading="lazy">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3m7zosI2187JQ88eXBPoIOn4FkePhSVS9LryyizSdGhDaJftHJuGDHfMrjcxgWpUTUXu7BTl08UsYYxFqeWTV4xuCji2RVo0mYI-aY0uFJFAZVMpzOkYFnCtrzdIY-EKCIiv1Pa-h4xCtEzCbT4m8jdAJedMRil7gEsT6MBEHm9GaPyVSpKjlQw-TG_5GFJ32Gr9oETDBuR1soAtJnNhSKaxJUm4uSCiNx6UJS7Z5ZG3grwilgwgJRhaowSIGVqOfxC4q1WWKdfl9wT3iwAbZpA9QwYHhcFIFKpNdjmBQ0s1by3xdrK_7Uvp_o2D9Dj5w0iyx9_3aRpkEeIPVRfKEP9mpa226PMzrh-de_UyvX8vZmuLzw-SX2GkdAA4zc4GPjm5q2P8QIwhP3GMlzHy22kRaAZj4Hhq_D8Kr_fr-o65KoSnFTRZ80vRX0Uvw&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY" alt="Erny's Barber Shop" class="editorial-img" loading="lazy">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3kkVvPpjfX1e0_EXn0dNLQC-7JUd4N_p_Y86jWoO4_R4Zf31BJAD4ymeHXXYQDQ-SzO9RqeZCZ6BL88ndOAe6PtMU3v_c1NbHtJNeJHSo2Vo98vqBeHrIMB_GxrmKiLyX4F27bL0_E8uQX4Eszfwznq3BWaQcRWmt9SUk6aQVM8Go7NJ67GUyWQ2AGYMKaGKb9puCSUW4lXVfsk-AbSjUm5vXp1OLAgxdYwP3gBaT73E5h1BFDcMj1R1BckqGHI4fRofXdMwKH3hguTSUqkgWJLPaS8prNhY7KdHyBwUsCqB1rR74Gi4nfKLkx4xFiJxyGJyJjfAzvbYEZS_-ueDjO4aSh4cZyxJLpHXL7Hme5L73mR8jprp9hhY852GTrDD4KaXou54R_HqBQBTAQmAORpeVS58VHHIfh4Hq6DcWuT-w&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY" alt="Erny's Barber Shop" class="editorial-img" loading="lazy">
+  </div>
+</div>
+
+<!-- PARALLAX BANNER -->
+<div class="parallax-banner">
+  <div class="parallax-bg"></div>
+  <div class="parallax-content reveal">
+    <h2>Sharp Cuts. Clean Lines.</h2>
+    <p style="margin-top:16px;font-size:.85rem;letter-spacing:3px;text-transform:uppercase;opacity:.6">Erny's Barber Shop &bull; Los Angeles, CA</p>
+  </div>
+</div>
+
+<!-- BENTO GALLERY -->
+<div class="bento-section" id="gallery">
+  <div class="section-label">Gallery</div>
+  <h2 class="section-title">Our Work</h2>
+  <div class="bento-grid" style="margin-top:32px">
+    <div class="bento-card large">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3mSgkO3Cd-vqt6bqvIGBS0KxRxyciouojY-AGVxnBKGOhz-T9NE3LrluWjVxcAiIqBpkQhm92IxMC7R1ORLSKe3Iz5jJpYat1fEpCksk6cnFkKHwRdcCl7eTN43srZ0-vrE2G-RNtd6j3mgDfJoAWIEwz8MoS-_eheQUQpfZtfEhwcbnHyGyiSZN6sZZ1Wd5dZOnfqul4yaghl6A9MICre8pjG_Fm0mJUjBOU0OM2SrGW5awrGCL10vdljv9idwODoepfqwDFcLKs8PNQ9Ay-rB5P9jjsy_OYYRKaDux3NHCJAHhvValeIPXofynXCpGQRH25nTClIxZRuDWEAQC8wXSEvnHo_QRWykvkdbgT-GDq8icKmgCoxLRUqfkXrquHJivzLmq9akyfNKwbx7_h1_xulV-tFDEFTH9Qz9QJA&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY" alt="Erny's Barber Shop" loading="lazy">
+      <div class="bento-card-overlay"><span class="bento-label">Erny's Barber Shop</span></div>
+    </div>
+    <div class="bento-card">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3llm_dx1y4c_Ejn6gH8Qj6Z8bpj8PfOAw8qHRnWjf9Y8urn4Q0XCcbQc-TyqxYVmuyCY4-NAv2pvugyJVEPLobqnfFlgpckEilJduaheZAZ0CqMTgU4au2-pggzPSeadYeQje5kgA83zMN1OsjII1v1_vwx3HDFdJzZyylOMTdzSQwh6LD7psfFUadMdr7ImRE7e9BjsujWO5tazDp7D5IVSX2cNo0LGx_mv7X7sW-0xzJ2fEZSEfN0nDP-KJpSqVZ7A_emO-p28xhfep1tHamlzsH3OEXFvtk3u9uDNWTs58JbnHJfWM_IiIe6o-FeESLT1-f2eOrMu8uiG7Xj4zrq8ig0EGsNllGfLNDZ26IJKyJUFBiIe-muNDV9K3LCAkOgYcUS5Mm5Xy3HVgx9j36SH6iQfuGWahlA0Dg5KPSxUSro&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY" alt="Erny's Barber Shop" loading="lazy">
+      <div class="bento-card-overlay"><span class="bento-label">Our Space</span></div>
+    </div>
+    <div class="bento-card">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3m7zosI2187JQ88eXBPoIOn4FkePhSVS9LryyizSdGhDaJftHJuGDHfMrjcxgWpUTUXu7BTl08UsYYxFqeWTV4xuCji2RVo0mYI-aY0uFJFAZVMpzOkYFnCtrzdIY-EKCIiv1Pa-h4xCtEzCbT4m8jdAJedMRil7gEsT6MBEHm9GaPyVSpKjlQw-TG_5GFJ32Gr9oETDBuR1soAtJnNhSKaxJUm4uSCiNx6UJS7Z5ZG3grwilgwgJRhaowSIGVqOfxC4q1WWKdfl9wT3iwAbZpA9QwYHhcFIFKpNdjmBQ0s1by3xdrK_7Uvp_o2D9Dj5w0iyx9_3aRpkEeIPVRfKEP9mpa226PMzrh-de_UyvX8vZmuLzw-SX2GkdAA4zc4GPjm5q2P8QIwhP3GMlzHy22kRaAZj4Hhq_D8Kr_fr-o65KoSnFTRZ80vRX0Uvw&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY" alt="Erny's Barber Shop" loading="lazy">
+      <div class="bento-card-overlay"><span class="bento-label">Expert Work</span></div>
+    </div>
+    <div class="bento-card">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3kkVvPpjfX1e0_EXn0dNLQC-7JUd4N_p_Y86jWoO4_R4Zf31BJAD4ymeHXXYQDQ-SzO9RqeZCZ6BL88ndOAe6PtMU3v_c1NbHtJNeJHSo2Vo98vqBeHrIMB_GxrmKiLyX4F27bL0_E8uQX4Eszfwznq3BWaQcRWmt9SUk6aQVM8Go7NJ67GUyWQ2AGYMKaGKb9puCSUW4lXVfsk-AbSjUm5vXp1OLAgxdYwP3gBaT73E5h1BFDcMj1R1BckqGHI4fRofXdMwKH3hguTSUqkgWJLPaS8prNhY7KdHyBwUsCqB1rR74Gi4nfKLkx4xFiJxyGJyJjfAzvbYEZS_-ueDjO4aSh4cZyxJLpHXL7Hme5L73mR8jprp9hhY852GTrDD4KaXou54R_HqBQBTAQmAORpeVS58VHHIfh4Hq6DcWuT-w&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY" alt="Erny's Barber Shop" loading="lazy">
+      <div class="bento-card-overlay"><span class="bento-label">Detail</span></div>
+    </div>
+    <div class="bento-card">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3mEDMoT8Qch7bkjKE0KHJYiiXkJTNP79atXeoSNI0gQ6BVohD8chdhEt1jKBk3TqKBr3SBFIHwiq2YkIJapH3oQV-F5tavsoRC8kxK6RkrIp8Tp1TM8jG1PqdUKlB6tnHX_EhoR_S6QaRv6I843cHZ-nR1o54TMKDjzIz5XFbRYjWpCavnp01J7snpc30UhOkT2rPlj_dVGIcA2pYrUAw-BHml5XdU3Ns6y5LgtjIayUVtPOJoykNGdkfT4aJAryxCux4vzy0P0EN6dx5jWpLE3-FvuOuCnXGPPawuhlb8jIeTjlkts6do7isocco0ng902rxubmRGBX5Vc81GjWxlg8y4je5kL6kelVIowb6W2BoHgWTIoS0f6WjA--e1WSJ7lxOQFc1DarpwEV45nfAmhj1CTSGrSc4RJcDmsJLilxnIl&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY" alt="Erny's Barber Shop" loading="lazy">
+      <div class="bento-card-overlay"><span class="bento-label">Craftsmanship</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<div class="services-section" id="services">
+  <div class="services-inner">
+    <div class="section-label">What We Offer</div>
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card reveal"><div class="service-icon">✂</div><div class="service-name">Haircuts</div><div class="service-desc">Sharp, clean cuts tailored to your style.</div></div><div class="service-card reveal"><div class="service-icon">🪒</div><div class="service-name">Shaves</div><div class="service-desc">Traditional hot towel shaves with precision.</div></div><div class="service-card reveal"><div class="service-icon">💈</div><div class="service-name">Beard Trims</div><div class="service-desc">Expert beard shaping and grooming.</div></div><div class="service-card reveal"><div class="service-icon">👑</div><div class="service-name">Full Service</div><div class="service-desc">Complete grooming packages for the modern man.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="reviews-section" id="reviews">
+  <div class="section-label">What Clients Say</div>
+  <h2 class="section-title">★★★★ &nbsp; 4.1 out of 5</h2>
+  <div class="reviews-grid">
+    
+        <div class="review-card">
+            <div class="review-stars">★</div>
+            <p class="review-text">"Got here at 12:03 pm on a Wed to have my 8 yr old get a haircut. Was asked at 12:06 if I had appt (I did not). There wer"</p>
+            <span class="review-author">— Crissy B</span>
+        </div>
+        <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"This place never fails, Kevin always makes sure to take his time, he never let me down, he always does a amazing job, Im"</p>
+            <span class="review-author">— Aldo Campos</span>
+        </div>
+        <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Great place to get your haircut. Good music A/C Good vibes and if you like sports there’s always a game on the tv/movies"</p>
+            <span class="review-author">— Edgar Lopez</span>
+        </div>
+  </div>
+</div>
+
+<!-- HOURS + MAP -->
+<div class="info-section" id="contact">
+  <div class="info-hours">
+    <div class="hours-title">Hours &amp; Location</div>
+    <div style="margin-bottom:32px">
+      <p style="font-size:.8rem;letter-spacing:1px;opacity:.5;margin-bottom:8px;text-transform:uppercase">Address</p>
+      <p style="font-size:.95rem;line-height:1.6">4580 Whittier Blvd, East Los Angeles, CA 90022, USA</p>
+    </div>
+    <div style="margin-bottom:32px">
+      <p style="font-size:.8rem;letter-spacing:1px;opacity:.5;margin-bottom:8px;text-transform:uppercase">Phone</p>
+      <a href="tel:(323) 495-7176" style="font-size:1.2rem;color:var(--accent);text-decoration:none">(323) 495-7176</a>
+    </div>
+    <div class="hours-title" style="font-size:1.4rem;margin-bottom:16px">Hours</div>
+    <div class="hour-row"><span>Call for hours</span></div>
+  </div>
+  <div class="info-map">
+    <iframe
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY&q=place_id:ChIJsThKqA3PwoARyXpHVjZpkXs&zoom=15"
+      allowfullscreen loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+<!-- CONTACT BAR -->
+<div class="contact-bar">
+  <div class="contact-info">
+    <h3>Erny's Barber Shop</h3>
+    <p>4580 Whittier Blvd &bull; East Los Angeles,  CA 90022</p>
+  </div>
+  <div class="contact-actions">
+    <a href="tel:(323) 495-7176" class="btn-primary">Call (323) 495-7176</a>
+    <a href="https://www.google.com/maps/place/?q=place_id:ChIJsThKqA3PwoARyXpHVjZpkXs" target="_blank" class="btn-outline">Directions</a>
+    <a href="https://search.google.com/local/writereview?placeid=ChIJsThKqA3PwoARyXpHVjZpkXs" target="_blank" class="btn-outline">Leave a Review</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Erny's Barber Shop</div>
+  <span class="footer-copy">&copy; 2026 Erny's Barber Shop. All rights reserved. &bull; East Los Angeles,  CA 90022</span>
+  <div class="footer-links">
+    <a href="tel:(323) 495-7176">Call</a>
+    <a href="https://www.google.com/maps/place/?q=place_id:ChIJsThKqA3PwoARyXpHVjZpkXs" target="_blank">Map</a>
+    <a href="#about">About</a>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<a href="tel:(323) 495-7176" class="float-cta">Call Now</a>
 
 <script>
-window.addEventListener('scroll',function(){
-  var s=window.scrollY;
-  document.getElementById('nav').classList.toggle('sc',s>60);
-  document.getElementById('stk').classList.toggle('on',s>600);
-});
-var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('in')})},{threshold:0.08});
-document.querySelectorAll('.fade').forEach(function(el){obs.observe(el)});
-function openLB(u){document.getElementById('lbi').src=u;document.getElementById('lb').classList.add('open')}
-function closeLB(){document.getElementById('lb').classList.remove('open')}
-document.getElementById('lb').addEventListener('click',function(e){if(e.target===this)closeLB()});
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB()});
-document.querySelectorAll('.sc-card').forEach(function(c){
-  c.addEventListener('mousemove',function(e){
-    var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
-    c.style.transform='perspective(700px) rotateY('+x*8+'deg) rotateX('+(-y*8)+'deg) translateY(-4px)';
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold: 0.1});
+reveals.forEach(r => observer.observe(r));
+
+// Parallax hero bg
+const heroBg = document.getElementById('heroBg');
+if(heroBg) {
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    heroBg.style.backgroundImage = `url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3mSgkO3Cd-vqt6bqvIGBS0KxRxyciouojY-AGVxnBKGOhz-T9NE3LrluWjVxcAiIqBpkQhm92IxMC7R1ORLSKe3Iz5jJpYat1fEpCksk6cnFkKHwRdcCl7eTN43srZ0-vrE2G-RNtd6j3mgDfJoAWIEwz8MoS-_eheQUQpfZtfEhwcbnHyGyiSZN6sZZ1Wd5dZOnfqul4yaghl6A9MICre8pjG_Fm0mJUjBOU0OM2SrGW5awrGCL10vdljv9idwODoepfqwDFcLKs8PNQ9Ay-rB5P9jjsy_OYYRKaDux3NHCJAHhvValeIPXofynXCpGQRH25nTClIxZRuDWEAQC8wXSEvnHo_QRWykvkdbgT-GDq8icKmgCoxLRUqfkXrquHJivzLmq9akyfNKwbx7_h1_xulV-tFDEFTH9Qz9QJA&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')`;
+    heroBg.style.transform = `scale(1.05) translateY(${scrolled * 0.3}px)`;
   });
-  c.addEventListener('mouseleave',function(){c.style.transform=''});
+}
+
+// Nav scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 80) {
+    navbar.style.background = 'rgba(0,0,0,0.92)';
+    navbar.style.borderBottomColor = 'rgba(255,255,255,0.1)';
+  } else {
+    navbar.style.background = 'rgba(0,0,0,0.3)';
+    navbar.style.borderBottomColor = 'rgba(255,255,255,0.06)';
+  }
 });
+
+// Counter animation
+const counters = document.querySelectorAll('[data-target]');
+const countObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      const target = parseInt(entry.target.getAttribute('data-target'));
+      let current = 0;
+      const step = Math.ceil(target / 50);
+      const timer = setInterval(() => {
+        current = Math.min(current + step, target);
+        entry.target.textContent = current.toLocaleString();
+        if(current >= target) clearInterval(timer);
+      }, 30);
+      countObserver.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.5});
+counters.forEach(c => countObserver.observe(c));
 </script>
 </body>
 </html>
