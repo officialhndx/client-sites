@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio A Salon | Houston, TX</title>
+<meta name="description" content="Studio A Salon in Houston, TX. Rated 4.6 stars with 422 reviews. A premier hair salon serving the Houston community with excellence and passion.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#C9A96E;
+  --gold2:#8B6914;
+  --accent:#E8D5A3;
+  --ink:#0D0D0D;
+  --ink2:#1A1A1A;
+  --ink3:#222222;
+  --grad:linear-gradient(135deg, #C9A96E 0%, #8B6914 50%, #C9A96E 100%);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--ink);color:#f0ece4;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;transition:all .3s ease;background:transparent}
+nav.scrolled{background:rgba(10,10,10,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,169,110,.15);padding:12px 40px}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:3px;color:var(--gold);text-decoration:none}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:#ccc;text-decoration:none;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--grad);color:#000;font-weight:700;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;padding:10px 24px;border-radius:2px;text-decoration:none;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+
+/* HERO */
+.hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background-size:cover;background-position:center;background-attachment:fixed}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.3) 0%,rgba(0,0,0,.65) 60%,rgba(0,0,0,.9) 100%);z-index:1}
+.hero-noise{position:absolute;inset:0;z-index:2;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-content{position:relative;z-index:3;max-width:900px;padding:0 24px}
+.hero-badge{display:inline-block;border:1px solid var(--gold);color:var(--gold);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;padding:6px 18px;border-radius:1px;margin-bottom:28px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,8vw,7rem);font-weight:900;line-height:1;margin-bottom:18px;background:linear-gradient(135deg,#fff 0%,var(--accent) 50%,var(--gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-size:clamp(1rem,2.5vw,1.4rem);color:rgba(255,255,255,.75);font-weight:300;letter-spacing:2px;margin-bottom:12px}
+.hero-tagline{font-size:.85rem;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:40px}
+.hero-stats{display:flex;gap:48px;justify-content:center;margin-bottom:48px}
+.stat-item{text-align:center}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--gold);letter-spacing:2px;line-height:1}
+.stat-lbl{font-size:.7rem;color:rgba(255,255,255,.5);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 36px;font-size:.85rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all .25s}
+.btn-gold{background:var(--grad);color:#000}
+.btn-gold:hover{opacity:.85;transform:translateY(-2px)}
+.btn-ghost{border:1px solid rgba(201,169,110,.5);color:var(--gold)}
+.btn-ghost:hover{background:rgba(201,169,110,.1);transform:translateY(-2px)}
+.scroll-hint{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.4);font-size:.7rem;letter-spacing:2px;text-transform:uppercase}
+.scroll-dot{width:1px;height:50px;background:linear-gradient(to bottom,rgba(201,169,110,.8),transparent);animation:scrollPulse 2s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{opacity:.4;transform:scaleY(1)}50%{opacity:1;transform:scaleY(1.2)}}
+
+/* MARQUEE */
+.marquee-strip{background:var(--grad);padding:14px 0;overflow:hidden;white-space:nowrap}
+.marquee-inner{display:inline-block;animation:marqueeScroll 25s linear infinite}
+.marquee-inner span{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:4px;color:#000;padding:0 40px}
+
+/* SECTIONS */
+section{padding:100px 40px}
+.section-label{font-size:.7rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:700;margin-bottom:20px;line-height:1.1}
+.section-line{width:60px;height:2px;background:var(--grad);margin-bottom:48px}
+.container{max-width:1200px;margin:0 auto}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-img{position:relative;border-radius:2px;overflow:hidden;aspect-ratio:4/5}
+.about-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.about-img:hover img{transform:scale(1.04)}
+.about-img::after{content:'';position:absolute;inset:0;border:1px solid rgba(201,169,110,.2)}
+.about-text p{color:rgba(255,255,255,.65);line-height:1.9;font-size:1rem;margin-bottom:20px}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.feat-item{background:rgba(201,169,110,.06);border:1px solid rgba(201,169,110,.12);border-radius:2px;padding:16px;display:flex;align-items:center;gap:12px}
+.feat-icon{font-size:1.2rem}
+.feat-text{font-size:.85rem;color:rgba(255,255,255,.7);font-weight:500}
+
+/* SERVICES */
+.services-bg{background:var(--ink2)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc-card{background:rgba(255,255,255,.03);border:1px solid rgba(201,169,110,.1);border-radius:2px;padding:36px 28px;transition:all .3s ease;cursor:default}
+.svc-card:hover{background:rgba(201,169,110,.06);border-color:rgba(201,169,110,.3);transform:translateY(-4px)}
+.svc-icon{font-size:2rem;margin-bottom:16px}
+.svc-card h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--gold);margin-bottom:12px}
+.svc-card p{font-size:.88rem;color:rgba(255,255,255,.55);line-height:1.7}
+
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:4px;border-radius:2px;overflow:hidden}
+.gal-item{background-size:cover;background-position:center;cursor:pointer;transition:transform .4s ease,filter .4s ease;filter:brightness(.9)}
+.gal-item:hover{transform:scale(1.02);filter:brightness(1.1)}
+.gal-item:first-child{grid-row:1/3}
+
+/* HOURS */
+.hours-contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.hours-box,.contact-box{background:rgba(201,169,110,.04);border:1px solid rgba(201,169,110,.12);border-radius:2px;padding:40px}
+.hr-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:.9rem}
+.hr-day{color:rgba(255,255,255,.5);font-weight:500}
+.hr-time{color:var(--gold);font-weight:600}
+.citem{display:flex;align-items:flex-start;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.06);text-decoration:none;color:inherit;transition:color .2s}
+.citem:hover .cval{color:var(--gold)}
+.cico{font-size:1.2rem;margin-top:2px}
+.clbl{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:4px}
+.cval{font-size:.95rem;color:rgba(255,255,255,.8);font-weight:500;line-height:1.5}
+
+/* REVIEWS */
+.reviews-bg{background:var(--ink2)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev-card{background:rgba(255,255,255,.03);border:1px solid rgba(201,169,110,.1);border-radius:2px;padding:32px;transition:border-color .3s}
+.rev-card:hover{border-color:rgba(201,169,110,.35)}
+.rev-stars{color:var(--gold);font-size:1rem;margin-bottom:16px;letter-spacing:2px}
+.rev-card p{font-size:.9rem;color:rgba(255,255,255,.6);line-height:1.7;font-style:italic;margin-bottom:20px}
+.rev-author{font-size:.78rem;color:var(--gold);letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.rat-badge{background:rgba(201,169,110,.1);border:1px solid rgba(201,169,110,.2);border-radius:2px;display:inline-block;padding:10px 20px;font-size:.85rem;color:rgba(255,255,255,.7);margin-bottom:16px}
+.rev-link{display:inline-flex;align-items:center;gap:8px;color:var(--gold);text-decoration:none;font-size:.85rem;letter-spacing:1px;border-bottom:1px solid rgba(201,169,110,.3);padding-bottom:4px;transition:all .2s}
+.rev-link:hover{border-color:var(--gold)}
+
+/* MAP */
+.map-section{background:var(--ink3)}
+.map-frame{border-radius:2px;overflow:hidden;border:1px solid rgba(201,169,110,.15);margin-top:40px}
+.map-frame iframe{display:block;width:100%;height:420px}
+
+/* CTA BANNER */
+.cta-banner{background:var(--grad);padding:80px 40px;text-align:center}
+.cta-banner h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:900;color:#000;margin-bottom:16px}
+.cta-banner p{font-size:1.1rem;color:rgba(0,0,0,.65);margin-bottom:36px}
+.btn-dark{background:#000;color:var(--gold);font-weight:700;letter-spacing:2px}
+.btn-dark:hover{background:#111;transform:translateY(-2px)}
+
+/* FOOTER */
+footer{background:#050505;padding:60px 40px 30px;border-top:1px solid rgba(201,169,110,.1)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:48px}
+.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:4px;color:var(--gold);margin-bottom:16px}
+.footer-tagline{font-size:.85rem;color:rgba(255,255,255,.35);line-height:1.7;max-width:280px}
+.footer-col h4{font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{color:rgba(255,255,255,.4);text-decoration:none;font-size:.88rem;transition:color .2s}
+.footer-col a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
+.footer-copy{font-size:.78rem;color:rgba(255,255,255,.25)}
+
+/* LIGHTBOX */
+#lb{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.95);align-items:center;justify-content:center}
+#lb.open{display:flex}
+#lb img{max-width:90vw;max-height:90vh;object-fit:contain;border:1px solid rgba(201,169,110,.2)}
+#lb-close{position:fixed;top:20px;right:28px;font-size:2rem;color:var(--gold);cursor:pointer;z-index:10000;background:none;border:none}
+
+/* STICKY BAR */
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;z-index:998;background:rgba(10,10,10,.95);backdrop-filter:blur(20px);border-top:1px solid rgba(201,169,110,.2);padding:12px 40px;display:flex;align-items:center;justify-content:space-between;transform:translateY(100%);transition:transform .3s ease}
+.sticky-bar.visible{transform:translateY(0)}
+.sticky-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;color:var(--gold)}
+.sticky-btns{display:flex;gap:12px}
+.sticky-btn{padding:8px 20px;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;text-decoration:none;transition:all .2s}
+.sb-gold{background:var(--grad);color:#000}
+.sb-ghost{border:1px solid rgba(201,169,110,.4);color:var(--gold)}
+
+/* ANIMATIONS */
+.fade-up{opacity:0;transform:translateY(40px);transition:opacity .7s ease,transform .7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.tilt-card{transition:transform .2s ease}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav{padding:16px 20px}
+  .nav-links{display:none}
+  section{padding:70px 20px}
+  .about-grid,.hours-contact-grid,.footer-grid{grid-template-columns:1fr}
+  .services-grid,.reviews-grid{grid-template-columns:1fr}
+  .hero-stats{gap:28px}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gal-item:first-child{grid-row:auto}
+  .sticky-bar{padding:10px 20px}
+}
+@keyframes marqueeScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">Studio A Salon</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:7138591591" class="nav-cta">Book Your Appointment</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home" style="background-image: url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AaVGc3k4N0A2NMA-leYgI_VuPUObhbPTJgB0JuEsj_nZJ2ZLZZWIIkNr7CVAUnAQ1Yn8YaOBr8KQ5AnRfPRX410TjThWPWjLQn1r39uUqNdKmyyZrP-lb11fC9EhDOoPnlMEcVwAUR4LNv4aYBWuKeY0lhyuCcNnX2CjzpASHD25Qo2yD1mKm41Tu1Zl2nn-oanx8Oi7rWOjO4oitvCXyVPMUAP9TA-DQV9w_xlNJc9enLmJD57jQoaRNpE33VRSOwdQjHVZ5WlaOOEraPGCvaMSLB9vYGjowtI-ZF3prJKSnFS5EjF9E4i9e6HiQKMHnuqsynOYolbZVAWsELVs-4lJavzUNBsDVBJgoc1NV3aSvFQOEVZfP75bfILsfJu3w1DPNCKxFbbw59HUmWISfYqM1WX6PUkfMNB8a_puHujI8-UH5RR8&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY');">
+  <div class="hero-noise"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Houston, TX &nbsp;&#183;&nbsp; Est. in the Community</div>
+    <h1>Studio A Salon</h1>
+    <p class="hero-sub">Where Beauty Meets Excellence</p>
+    <p class="hero-tagline">Premium Hair Care in Houston</p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">4.6</div>
+        <div class="stat-lbl">Star Rating</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">422</div>
+        <div class="stat-lbl">Reviews</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5&#9733;</div>
+        <div class="stat-lbl">Google</div>
+      </div>
+    </div>
+    <div class="hero-btns">
+      <a href="tel:7138591591" class="btn btn-gold">Book Your Appointment</a>
+      <a href="#services" class="btn btn-ghost">View Services</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-dot"></div>Scroll</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-inner">
+    <span>Studio A Salon</span><span>&#9679;</span><span>Houston, TX</span><span>&#9679;</span>
+    <span>4.6 Stars</span><span>&#9679;</span><span>422 Reviews</span><span>&#9679;</span>
+    <span>Premium Quality</span><span>&#9679;</span><span>Call (713) 859-1591</span><span>&#9679;</span>
+    <span>Studio A Salon</span><span>&#9679;</span><span>Houston, TX</span><span>&#9679;</span>
+    <span>4.6 Stars</span><span>&#9679;</span><span>422 Reviews</span><span>&#9679;</span>
+    <span>Premium Quality</span><span>&#9679;</span><span>Call (713) 859-1591</span><span>&#9679;</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid fade-up">
+      <div class="about-img">
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3nVG_5SqMOMhDqj1skOv-XwKmqJSCezBU5zKlpk5DMKA-5eHOVuXDURdO-GVAIux2O_TCDiLxAwomOcxdK3v7GUkbE1Qt6nhCzWbZgwJ4rRH_D6cTNdc7ReRCKaCLmSIcs85bU4F7fiP0ExidoiAfN-78pc4SZ2eBi-EMXu1WVsCbAei7K8uel3TX_5jP4C0XFm2MD-H24mw67AqMkRciAgVc4Yn-qRICqsZEvQeJwyB8pCeh5gMGsGMs30L2fU-hFzxL5fdIcO4zmCMTV_2qFeqCU2IVQPifw7R5ed4yKQMgYn3pf3G-iqDqoCec83B_O1ceEMnT_kKk6XjQK7TBNfy9EWhDRTVT5CyZw989L4RxTBoz6rmVmYZ5oU6i3DYPHVABFy1wz1ibUuSq4kOePcu8vowvfLdywLKp01uwc_XvxR-EQzlkSEAUQdKhBn&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY" alt="Studio A Salon" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="about-text">
+        <div class="section-label">Our Story</div>
+        <h2 class="section-title">A Trusted Name<br>in Houston</h2>
+        <div class="section-line"></div>
+        <p>A premier hair salon serving the Houston community with excellence and passion.</p>
+        <p>With 422 verified Google reviews and a 4.6-star rating, we have built our reputation one satisfied customer at a time. Come experience the difference that genuine care and expert craftsmanship makes.</p>
+        <div class="about-features">
+          <div class="feat-item"><div class="feat-icon">&#9733;</div><div class="feat-text">4.6-Star Rated</div></div>
+          <div class="feat-item"><div class="feat-icon">&#10003;</div><div class="feat-text">Verified Reviews</div></div>
+          <div class="feat-item"><div class="feat-icon">&#128205;</div><div class="feat-text">Houston, TX</div></div>
+          <div class="feat-item"><div class="feat-icon">&#128222;</div><div class="feat-text">(713) 859-1591</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-bg">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;margin-bottom:56px">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Our Services</h2>
+      <div class="section-line" style="margin:0 auto 0"></div>
+    </div>
+    <div class="services-grid fade-up">
+      <div class="svc-card">
+          <div class="svc-icon">&#9999;</div>
+          <h3>Cuts &amp; Styling</h3>
+          <p>Precision cuts, blowouts, and styling for every hair type and texture.</p>
+        </div>
+<div class="svc-card">
+          <div class="svc-icon">&#10024;</div>
+          <h3>Color &amp; Highlights</h3>
+          <p>Balayage, full color, highlights, and custom toning by expert colorists.</p>
+        </div>
+<div class="svc-card">
+          <div class="svc-icon">&#128146;</div>
+          <h3>Treatments</h3>
+          <p>Deep conditioning, keratin treatments, and scalp care for healthy hair.</p>
+        </div>
+<div class="svc-card">
+          <div class="svc-icon">&#128248;</div>
+          <h3>Special Occasions</h3>
+          <p>Bridal, prom, and event styling to make you look and feel your best.</p>
+        </div>
+<div class="svc-card">
+          <div class="svc-icon">&#128167;</div>
+          <h3>Extensions</h3>
+          <p>Tape-in, sew-in, and clip-in extensions for added length and volume.</p>
+        </div>
+<div class="svc-card">
+          <div class="svc-icon">&#127775;</div>
+          <h3>Natural Hair</h3>
+          <p>Silk press, loc maintenance, and natural styling for all textures.</p>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="fade-up" style="margin-bottom:40px">
+      <div class="section-label">Our Work</div>
+      <h2 class="section-title">Photo Gallery</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="gallery-grid fade-up">
+      <div class="gal-item" onclick="openLB('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3k4N0A2NMA-leYgI_VuPUObhbPTJgB0JuEsj_nZJ2ZLZZWIIkNr7CVAUnAQ1Yn8YaOBr8KQ5AnRfPRX410TjThWPWjLQn1r39uUqNdKmyyZrP-lb11fC9EhDOoPnlMEcVwAUR4LNv4aYBWuKeY0lhyuCcNnX2CjzpASHD25Qo2yD1mKm41Tu1Zl2nn-oanx8Oi7rWOjO4oitvCXyVPMUAP9TA-DQV9w_xlNJc9enLmJD57jQoaRNpE33VRSOwdQjHVZ5WlaOOEraPGCvaMSLB9vYGjowtI-ZF3prJKSnFS5EjF9E4i9e6HiQKMHnuqsynOYolbZVAWsELVs-4lJavzUNBsDVBJgoc1NV3aSvFQOEVZfP75bfILsfJu3w1DPNCKxFbbw59HUmWISfYqM1WX6PUkfMNB8a_puHujI8-UH5RR8&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3k4N0A2NMA-leYgI_VuPUObhbPTJgB0JuEsj_nZJ2ZLZZWIIkNr7CVAUnAQ1Yn8YaOBr8KQ5AnRfPRX410TjThWPWjLQn1r39uUqNdKmyyZrP-lb11fC9EhDOoPnlMEcVwAUR4LNv4aYBWuKeY0lhyuCcNnX2CjzpASHD25Qo2yD1mKm41Tu1Zl2nn-oanx8Oi7rWOjO4oitvCXyVPMUAP9TA-DQV9w_xlNJc9enLmJD57jQoaRNpE33VRSOwdQjHVZ5WlaOOEraPGCvaMSLB9vYGjowtI-ZF3prJKSnFS5EjF9E4i9e6HiQKMHnuqsynOYolbZVAWsELVs-4lJavzUNBsDVBJgoc1NV3aSvFQOEVZfP75bfILsfJu3w1DPNCKxFbbw59HUmWISfYqM1WX6PUkfMNB8a_puHujI8-UH5RR8&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')"></div>
+<div class="gal-item" onclick="openLB('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3nVG_5SqMOMhDqj1skOv-XwKmqJSCezBU5zKlpk5DMKA-5eHOVuXDURdO-GVAIux2O_TCDiLxAwomOcxdK3v7GUkbE1Qt6nhCzWbZgwJ4rRH_D6cTNdc7ReRCKaCLmSIcs85bU4F7fiP0ExidoiAfN-78pc4SZ2eBi-EMXu1WVsCbAei7K8uel3TX_5jP4C0XFm2MD-H24mw67AqMkRciAgVc4Yn-qRICqsZEvQeJwyB8pCeh5gMGsGMs30L2fU-hFzxL5fdIcO4zmCMTV_2qFeqCU2IVQPifw7R5ed4yKQMgYn3pf3G-iqDqoCec83B_O1ceEMnT_kKk6XjQK7TBNfy9EWhDRTVT5CyZw989L4RxTBoz6rmVmYZ5oU6i3DYPHVABFy1wz1ibUuSq4kOePcu8vowvfLdywLKp01uwc_XvxR-EQzlkSEAUQdKhBn&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3nVG_5SqMOMhDqj1skOv-XwKmqJSCezBU5zKlpk5DMKA-5eHOVuXDURdO-GVAIux2O_TCDiLxAwomOcxdK3v7GUkbE1Qt6nhCzWbZgwJ4rRH_D6cTNdc7ReRCKaCLmSIcs85bU4F7fiP0ExidoiAfN-78pc4SZ2eBi-EMXu1WVsCbAei7K8uel3TX_5jP4C0XFm2MD-H24mw67AqMkRciAgVc4Yn-qRICqsZEvQeJwyB8pCeh5gMGsGMs30L2fU-hFzxL5fdIcO4zmCMTV_2qFeqCU2IVQPifw7R5ed4yKQMgYn3pf3G-iqDqoCec83B_O1ceEMnT_kKk6XjQK7TBNfy9EWhDRTVT5CyZw989L4RxTBoz6rmVmYZ5oU6i3DYPHVABFy1wz1ibUuSq4kOePcu8vowvfLdywLKp01uwc_XvxR-EQzlkSEAUQdKhBn&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')"></div>
+<div class="gal-item" onclick="openLB('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3neubMapDAOLvfIUoIi5Cc69Kw6xkU14lZ3xev6eKI1iN6vNdLzJShfj2tUZb9Cl1hz3XgBCickiSCD6R1xQACVlh7R_VvolhhRGwYYBzDUbwabY4XwGNGe7cONZemWjtTfTbsf6dKS6Ulc_FAY1luPtupqDwJ8LGfFdROAFYTXR_wUc1Sm8AoyWsOU-qtcTDBCEXeET7tZ7e1-LcccXUTJSc6X7z37yxQPTl0ztd_9QhNKUNdD8XIBZmgYTI_I55Qu-W7TdgcNQVql65iEE_gR3RsjMSeENXonlP9ncs9iQ6WonHBJreYymrQc8qm7iXv77C3PKzpW0N1305U1eQaSOd2wRqa_05VjaQ3j6uJR7NU4b0uAUQLrAfbPHVW3Wo53Z99_XGgE9bBQw6Y-q16VLooJjYDb2TX0rRzwqiN-sKQc&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3neubMapDAOLvfIUoIi5Cc69Kw6xkU14lZ3xev6eKI1iN6vNdLzJShfj2tUZb9Cl1hz3XgBCickiSCD6R1xQACVlh7R_VvolhhRGwYYBzDUbwabY4XwGNGe7cONZemWjtTfTbsf6dKS6Ulc_FAY1luPtupqDwJ8LGfFdROAFYTXR_wUc1Sm8AoyWsOU-qtcTDBCEXeET7tZ7e1-LcccXUTJSc6X7z37yxQPTl0ztd_9QhNKUNdD8XIBZmgYTI_I55Qu-W7TdgcNQVql65iEE_gR3RsjMSeENXonlP9ncs9iQ6WonHBJreYymrQc8qm7iXv77C3PKzpW0N1305U1eQaSOd2wRqa_05VjaQ3j6uJR7NU4b0uAUQLrAfbPHVW3Wo53Z99_XGgE9bBQw6Y-q16VLooJjYDb2TX0rRzwqiN-sKQc&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')"></div>
+<div class="gal-item" onclick="openLB('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3lLOCzQLS2ZcJt5GjXgmIPyxC0_nAKClHRatkUWuQ8Y8zUtXwEjgVvk76_JmFUJI5hU5Xg4m9J3D08Hbg5BBwtoX1x7LhgbM8OAuzeab57FUgvNxPjqbalniBmConrVF_VWjfDLe9dXFgA9s_u1sSXMxB-oj3Dhd1IvQaKA8hmqzU8Ucn9m4geaMdaXIA-j-gVtndJi5aL2l6zIaWEAkMGQ1z8aGqyNmzCLy4pWCE8SJko4vgnCasBBcaznh7kFopmWopozbwC1-cJ0fvy8XCfMPSLDkkE1Mx2LTd_sSeGt4wZMcljR-tSrM9sPbYZrDgWyjmufceIFNY1R_BqoFCLvRlicpBndRE9okjYX46COMEQVwmEccdDGyZRz13V892VM32RLR-vo7n2bkgYwIbG7HM0eV4IVv8MCUxnfApcJdLS5&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3lLOCzQLS2ZcJt5GjXgmIPyxC0_nAKClHRatkUWuQ8Y8zUtXwEjgVvk76_JmFUJI5hU5Xg4m9J3D08Hbg5BBwtoX1x7LhgbM8OAuzeab57FUgvNxPjqbalniBmConrVF_VWjfDLe9dXFgA9s_u1sSXMxB-oj3Dhd1IvQaKA8hmqzU8Ucn9m4geaMdaXIA-j-gVtndJi5aL2l6zIaWEAkMGQ1z8aGqyNmzCLy4pWCE8SJko4vgnCasBBcaznh7kFopmWopozbwC1-cJ0fvy8XCfMPSLDkkE1Mx2LTd_sSeGt4wZMcljR-tSrM9sPbYZrDgWyjmufceIFNY1R_BqoFCLvRlicpBndRE9okjYX46COMEQVwmEccdDGyZRz13V892VM32RLR-vo7n2bkgYwIbG7HM0eV4IVv8MCUxnfApcJdLS5&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')"></div>
+<div class="gal-item" onclick="openLB('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3lLHu-z6ceolvSe2y5N9kk1O4xpoIcTliVybFeCdOTGY5XSX1Dbsrs7W2Ot_NVQyiA4ptA3F_l5bRJSK9Ywim4-Dqg91KI3zV-fEt-l7h035mN6Hy7Tn0TlxoBCN71lii2avSsgedZWrBM6kWHV6Muu56pPYn0dSZGRGTUIBlGCd5g4LuRrDDD_9H3iFhgllFVSlzGowFz26ub_Fapk6jS9xu5lKAvpWu3x5MsfzNpbFh7_bVKyjUsCe0QQ-l16e1LOouFcWc9FTAV4bDZPA9RgrrzcublHRTpXL3tI6fDSc0zmN8GM_JXbyX3I_o5rgIaAO3sXQtbdRizYfNorlqb4TCCFw5tB1TnhtiOqwYUyvIKEwPeg2iKeGxPKREHrOwTlMFUVhFgvrIYj1ztcyVUogzuElJ8xSvW9_xSeQkrLb-h6zw3CSn9fUk_ffiD8&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3lLHu-z6ceolvSe2y5N9kk1O4xpoIcTliVybFeCdOTGY5XSX1Dbsrs7W2Ot_NVQyiA4ptA3F_l5bRJSK9Ywim4-Dqg91KI3zV-fEt-l7h035mN6Hy7Tn0TlxoBCN71lii2avSsgedZWrBM6kWHV6Muu56pPYn0dSZGRGTUIBlGCd5g4LuRrDDD_9H3iFhgllFVSlzGowFz26ub_Fapk6jS9xu5lKAvpWu3x5MsfzNpbFh7_bVKyjUsCe0QQ-l16e1LOouFcWc9FTAV4bDZPA9RgrrzcublHRTpXL3tI6fDSc0zmN8GM_JXbyX3I_o5rgIaAO3sXQtbdRizYfNorlqb4TCCFw5tB1TnhtiOqwYUyvIKEwPeg2iKeGxPKREHrOwTlMFUVhFgvrIYj1ztcyVUogzuElJ8xSvW9_xSeQkrLb-h6zw3CSn9fUk_ffiD8&key=AIzaSyCfdAnbl6BD39JlqibZxYano8xyzRsW4hY')"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOURS & CONTACT -->
+<section id="contact" class="map-section">
+  <div class="container">
+    <div class="fade-up" style="margin-bottom:48px">
+      <div class="section-label">Find Us</div>
+      <h2 class="section-title">Hours &amp; Contact</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="hours-contact-grid fade-up">
+      <div class="hours-box">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gold);margin-bottom:24px">Business Hours</h3>
+        <div class="hr-row"><span class="hr-day">Monday</span><span class="hr-time">9:00 AM – 5:00 PM</span></div>
+<div class="hr-row"><span class="hr-day">Tuesday</span><span class="hr-time">9:00 AM – 8:00 PM</span></div>
+<div class="hr-row"><span class="hr-day">Wednesday</span><span class="hr-time">9:00 AM – 8:00 PM</span></div>
+<div class="hr-row"><span class="hr-day">Thursday</span><span class="hr-time">9:00 AM – 8:00 PM</span></div>
+<div class="hr-row"><span class="hr-day">Friday</span><span class="hr-time">9:00 AM – 8:00 PM</span></div>
+<div class="hr-row"><span class="hr-day">Saturday</span><span class="hr-time">9:00 AM – 5:00 PM</span></div>
+<div class="hr-row"><span class="hr-day">Sunday</span><span class="hr-time">Closed</span></div>
+
+      </div>
+      <div class="contact-box">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gold);margin-bottom:24px">Contact Us</h3>
+        <a href="tel:7138591591" class="citem">
+          <div class="cico">&#128222;</div>
+          <div><div class="clbl">Phone</div><div class="cval">(713) 859-1591</div></div>
+        </a>
+        <a href="https://maps.google.com/?q=Studio+A+Salon,+803+Usener+St+Ste+300%2C+Houston%2C+TX+77009%2C+USA" target="_blank" class="citem">
+          <div class="cico">&#128205;</div>
+          <div><div class="clbl">Address</div><div class="cval">803 Usener St Ste 300, Houston, TX 77009, USA</div></div>
+        </a>
+        <a href="https://maps.google.com/?q=Studio+A+Salon,+803+Usener+St+Ste+300%2C+Houston%2C+TX+77009%2C+USA" target="_blank" class="citem">
+          <div class="cico">&#128663;</div>
+          <div><div class="clbl">Directions</div><div class="cval">Open in Google Maps</div></div>
+        </a>
+      </div>
+    </div>
+    <div class="map-frame fade-up">
+      <iframe src="https://maps.google.com/maps?q=Studio+A+Salon,+803+Usener+St+Ste+300%2C+Houston%2C+TX+77009%2C+USA&output=embed&z=16" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Studio A Salon Location"></iframe>
+    </div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="https://maps.google.com/?q=Studio+A+Salon,+803+Usener+St+Ste+300%2C+Houston%2C+TX+77009%2C+USA" target="_blank" class="btn btn-gold">&#128205; Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="reviews-bg">
+  <div class="container">
+    <div class="fade-up" style="margin-bottom:20px">
+      <div class="section-label">What People Say</div>
+      <h2 class="section-title">Google Reviews</h2>
+      <div class="section-line"></div>
+      <div class="rat-badge">Studio A Salon &nbsp;&#183;&nbsp; 4.6 &#9733; &nbsp;&#183;&nbsp; 422 Reviews on Google</div><br>
+      <a href="https://search.google.com/local/reviews?placeid=ChIJrSq621_AQIYRvFP2UQKhBdM" target="_blank" class="rev-link">&#11088; Leave a Review on Google</a>
+    </div>
+    <div class="reviews-grid fade-up">
+      <div class="rev-card">
+          <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"In August 2020, I walked into Studio A with the worst haircut of my life. My hair had been completely chopped up, and I was desperately looking for someone who could help fix it. I randomly chose Dane"</p>
+          <div class="rev-author">— Alejandra Villa</div>
+        </div>
+<div class="rev-card">
+          <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"I cannot say enough amazing things about my experience with Garret at Studio A! From start to finish, he absolutely exceeded every expectation I had. I went in for a blowout, color, and left feeling l"</p>
+          <div class="rev-author">— Joshua Fajardo</div>
+        </div>
+<div class="rev-card">
+          <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Bryan is amazing! I’ve been getting haircuts for thirty-odd years, but Bryan is the first person who has given me a hairstyle. He listens to what I want and then delivers. I’ve moved away from Houston"</p>
+          <div class="rev-author">— Abbie Farmer</div>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>Ready to Experience Studio A Salon?</h2>
+  <p>Join thousands of satisfied customers. Give us a call today.</p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+    <a href="tel:7138591591" class="btn btn-dark">&#128222; Call Now: (713) 859-1591</a>
+    <a href="https://maps.google.com/?q=Studio+A+Salon,+803+Usener+St+Ste+300%2C+Houston%2C+TX+77009%2C+USA" target="_blank" class="btn btn-dark" style="background:#111">&#128205; Get Directions</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Studio A Salon</div>
+        <p class="footer-tagline">A premier hair salon serving the Houston community with excellence and passion.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:7138591591">(713) 859-1591</a></li>
+          <li><a href="https://maps.google.com/?q=Studio+A+Salon,+803+Usener+St+Ste+300%2C+Houston%2C+TX+77009%2C+USA" target="_blank">Get Directions</a></li>
+          <li><a href="https://search.google.com/local/reviews?placeid=ChIJrSq621_AQIYRvFP2UQKhBdM" target="_blank">Leave a Review</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2025 Studio A Salon. All rights reserved. Houston, TX.</div>
+      <div class="footer-copy">Powered by Houston Web Design</div>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lb"><button id="lb-close" onclick="closeLB()">&#x2715;</button><img id="lb-img" src="" alt="Gallery"></div>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="sticky">
+  <div class="sticky-name">Studio A Salon</div>
+  <div class="sticky-btns">
+    <a href="tel:7138591591" class="sticky-btn sb-gold">&#128222; Call Now</a>
+    <a href="https://maps.google.com/?q=Studio+A+Salon,+803+Usener+St+Ste+300%2C+Houston%2C+TX+77009%2C+USA" target="_blank" class="sticky-btn sb-ghost">Directions</a>
+  </div>
+</div>
+
+<script>
+// Nav scroll
+window.addEventListener('scroll',function(){
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
+  document.getElementById('sticky').classList.toggle('visible',window.scrollY>500);
+});
+// Fade up observer
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:0.1});
+document.querySelectorAll('.fade-up').forEach(function(el){obs.observe(el)});
+// Lightbox
+function openLB(url){document.getElementById('lb-img').src=url;document.getElementById('lb').classList.add('open')}
+function closeLB(){document.getElementById('lb').classList.remove('open')}
+document.getElementById('lb').addEventListener('click',function(e){if(e.target===this)closeLB()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB()});
+// 3D tilt on service cards
+document.querySelectorAll('.svc-card').forEach(function(card){
+  card.addEventListener('mousemove',function(e){
+    var r=card.getBoundingClientRect();
+    var x=(e.clientX-r.left)/r.width-.5;
+    var y=(e.clientY-r.top)/r.height-.5;
+    card.style.transform='perspective(600px) rotateY('+x*10+'deg) rotateX('+(-y*10)+'deg) translateY(-4px)';
+  });
+  card.addEventListener('mouseleave',function(){card.style.transform=''});
+});
+</script>
+</body>
+</html>
